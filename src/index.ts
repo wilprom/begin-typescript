@@ -11,11 +11,11 @@
 // const button = document.querySelector('.button') as HTMLButtonElement
 // const button = <HTMLButtonElement>document.querySelector('.button')
 
-// function increment<NumType>(num: NumType): NumType {
+// function returnNumber<NumType>(num: NumType): NumType {
 //   return num
 // }
 
-// const num = increment<number>(3)
+// const num = returnNumber<number>(3)
 
 
 let count: number = 0
