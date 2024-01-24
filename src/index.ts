@@ -1,11 +1,13 @@
 let count: number = 0
 
-const btnIncrement = document.querySelector('.btn-increment')
-const viewScore = document.querySelector('.view')
+const btnIncrement = <HTMLButtonElement>document.querySelector(".btn-increment")
+const viewScore = <HTMLParagraphElement>document.querySelector(".view")
 
-const handleIncrement = (e) => {
+const handleIncrement = (e: MouseEvent) => {
   count++
-  viewScore.querySelector('span').innerText = count.toString()
+
+  const span = <HTMLSpanElement>viewScore.querySelector("span")
+  span.innerText = count.toString()
 }
 
-btnIncrement.addEventListener('click', handleIncrement)
+btnIncrement.addEventListener("click", handleIncrement)

@@ -3,7 +3,7 @@
     "outDir": "./dist",
     "target": "ES6",
     "noEmitOnError": true,
-    "strict": false,
+    "strict": true
   },
   "files": [
     "./src/index.ts"
